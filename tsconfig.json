@@ -2,8 +2,10 @@
     "compilerOptions": {
         "rootDir": "src",
         "outDir": "lib",
+        "lib": ["es2015"],
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true
-    }
+    },
+    "exclude": ["node_modules", "lib"]
 }
