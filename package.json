@@ -1,0 +1,29 @@
+{
+    "author": {
+        "email": "joelday@gmail.com",
+        "name": "Joel Day",
+        "url": "https://github.com/joelday"
+    },
+    "files": [
+        "lib"
+    ],
+    "main": "lib/index.js",
+    "typings": "src/index.d.ts",
+    "description": "Winston transport for vscode-languageserver's RemoteConsole.",
+    "license": "MIT",
+    "name": "winston-vscode-languageserver",
+    "scripts": {
+        "clean": "rimraf lib",
+        "build": "tsc -p tsconfig.json",
+        "prepublishOnly": "npm run clean && npm run build"
+    },
+    "version": "1.0.0",
+    "devDependencies": {
+        "rimraf": "^2.6.2",
+        "typescript": "^3.0.3"
+    },
+    "dependencies": {
+        "vscode-languageserver-protocol": "^3.12.0",
+        "winston-transport": "^4.2.0"
+    }
+}
