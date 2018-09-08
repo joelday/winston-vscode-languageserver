@@ -19,7 +19,6 @@ export class RemoteConsoleTransport extends TransportStream {
         const message = `${info[MESSAGE]}`;
 
         if (this._remoteConsole[info[LEVEL]]) {
-            console.log(message);
             this._remoteConsole[info[LEVEL]](message);
         }
         else {
